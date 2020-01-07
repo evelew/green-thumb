@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
+import breakpoints from "common/breakpoints";
+
 export const Header = styled.header`
   margin-bottom: 25px;
   padding: 24px 0;
+
+  @media(${breakpoints.LARGE}) {
+    display: none;
+  }
 `;
 
 export const WrapperLogo = styled.div`

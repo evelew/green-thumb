@@ -9,6 +9,7 @@ export default function Question({
   imageAlt,
   items,
   title: Title,
+  nextButtonText,
   prevButtonText
 }) {
   return (
@@ -26,7 +27,7 @@ export default function Question({
       ))}
 
       <Styles.WrapperButtons>
-        <Button arrow>next</Button>
+        <Button arrow>{nextButtonText ? nextButtonText : "next"}</Button>
         <Button ghost arrow arrowDirection="left">
           {prevButtonText ? prevButtonText : "previous"}
         </Button>

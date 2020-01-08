@@ -39,6 +39,7 @@ export default function SunlightQuestion() {
         imageSrc={Sun}
         imageAlt="Sol de óculos escuro"
         items={items}
+        prevButtonText="home"
       />
     </Container>
   );

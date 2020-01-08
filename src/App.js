@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 
-import WaterQuestion from "pages/water-question";
+import SunlightQuestion from "pages/sunlight-question";
 
 function App() {
   return (
-    <WaterQuestion />
+    <SunlightQuestion />
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />

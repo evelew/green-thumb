@@ -1,10 +1,10 @@
 import React from "react";
 
-import PetQuestion from "pages/pet-question";
+import Results from "pages/results";
 
 function App() {
   return (
-    <PetQuestion />
+    <Results />
   );
 }
 

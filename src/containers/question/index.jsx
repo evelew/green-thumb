@@ -8,6 +8,7 @@ export default function Question({
   imageSrc,
   imageAlt,
   items,
+  subtitle: Subtitle,
   title: Title,
   nextButtonText,
   prevButtonText
@@ -22,9 +23,17 @@ export default function Question({
         <Title />
       </Styles.Title>
 
-      {items.map(item => (
-        <Input icon={item.icon} name={item.name} />
-      ))}
+      {Subtitle && (
+        <Styles.Subtitle>
+          <Subtitle />
+        </Styles.Subtitle>
+      )}
+
+      <Styles.WrapperOptions>
+        {items.map(item => (
+          <Input icon={item.icon} name={item.name} />
+        ))}
+      </Styles.WrapperOptions>
 
       <Styles.WrapperButtons>
         <Button arrow>{nextButtonText ? nextButtonText : "next"}</Button>

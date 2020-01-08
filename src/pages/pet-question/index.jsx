@@ -30,6 +30,12 @@ export default function PetQuestion() {
             Do you have pets? Do they <strong>chew</strong> plants?
           </>
         )}
+        subtitle={() => (
+          <>
+            We are asking because some plants can be <strong>toxic</strong> for
+            your buddy.
+          </>
+        )}
         imageSrc={Dog}
         imageAlt=""
         items={items}

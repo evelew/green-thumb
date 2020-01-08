@@ -12,8 +12,19 @@ export const Title = styled.h1`
   color: ${colors["grey1"]};
   font-size: 22px;
   font-weight: normal;
-  margin-bottom: 30px;
   text-align: center;
+`;
+
+export const Subtitle = styled.p`
+  color: ${colors["grey1"]};
+  font-size: 14px;
+  margin-top: 11px;
+  padding: 0 18px;
+  text-align: center;
+`;
+
+export const WrapperOptions = styled.div`
+  margin-top: 30px;
 `;
 
 export const WrapperButtons = styled.div`

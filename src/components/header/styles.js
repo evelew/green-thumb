@@ -3,7 +3,7 @@ import styled from "styled-components";
 import breakpoints from "common/breakpoints";
 
 export const Header = styled.header`
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding: 24px 0;
 
   @media(${breakpoints.LARGE}) {

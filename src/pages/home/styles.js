@@ -3,16 +3,13 @@ import styled from "styled-components";
 import IllustrationMobile from "assets/images/illustration-home-mobile.png";
 import IllustrationDesktop from "assets/images/illustration-home-desktop.png";
 
-import colors from "common/colors";
 import breakpoints from "common/breakpoints";
 
 export const Content = styled.section`
-  background-color: ${colors["grey"]};
   background-image: url(${IllustrationMobile});
   background-repeat: no-repeat;
   background-size: 98%;
   background-position: -13px 110%;
-  height: 100vh;
   overflow: hidden;
 
   @media (${breakpoints.MEDIUM}) {

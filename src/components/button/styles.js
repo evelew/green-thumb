@@ -18,6 +18,12 @@ export const Button = styled.button`
       background: transparent;
       border: 1px solid ${Colors["darkGreen"]};
       color: ${Colors["darkGreen"]};
+
+      svg {
+        path {
+          stroke: ${Colors["darkGreen"]};
+        }
+      }
     `};
 
   svg {

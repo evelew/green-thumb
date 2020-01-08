@@ -8,6 +8,7 @@ export default function Question({
   imageSrc,
   imageAlt,
   items,
+  title: Title,
   prevButtonText
 }) {
   return (
@@ -17,7 +18,7 @@ export default function Question({
       </Styles.WrapperImage>
 
       <Styles.Title>
-        First set the amount of <strong>sunlight</strong> your plant will get.
+        <Title />
       </Styles.Title>
 
       {items.map(item => (

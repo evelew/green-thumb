@@ -6,8 +6,6 @@ import IllustrationDesktop from "assets/images/illustration-home-desktop.png";
 import colors from "common/colors";
 import breakpoints from "common/breakpoints";
 
-import { default as BaseButton } from "components/button";
-
 export const Content = styled.section`
   background-color: ${colors["grey"]};
   background-image: url(${IllustrationMobile});
@@ -26,6 +24,16 @@ export const Content = styled.section`
     background-size: 779px;
     background-position: 90% 100%;
   }
+
+  button {
+    font-weight: 600;
+    margin: 0 auto;
+    width: 174px;
+
+    @media (${breakpoints.LARGE}) {
+      margin: 0;
+    }
+  }
 `;
 
 export const Title = styled.h1`
@@ -37,17 +45,6 @@ export const Title = styled.h1`
     font-size: 66px;
     text-align: left;
     width: 433px;
-  }
-`;
-
-export const Button = styled(BaseButton)`
-  display: block;
-  font-weight: 600;
-  margin: 0 auto;
-  width: 174px;
-
-  @media (${breakpoints.LARGE}) {
-    margin: 0;
   }
 `;
 

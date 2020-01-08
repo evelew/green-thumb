@@ -1,17 +1,13 @@
-import styled, { css } from 'styled-components';
+import React from "react";
 
-import Colors from 'common/colors';
+import Arrow from 'components/arrow';
+import * as Styles from "./styles";
 
-export default styled.button`
-  background: ${Colors['darkGreen']};
-  border-radius: 25px;
-  color: white;
-  font-size: 16px;
-  padding: 12px 16px;
-
-  ${props => props.ghost && css`
-    background: transparent;
-    border: 1px solid ${Colors['darkGreen']};
-    color: ${Colors['darkGreen']};
-  `}
-`;
+export default function Button({ children, ghost, arrow, arrowDirection }) {
+  return (
+    <Styles.Button ghost={ghost}>
+      {arrow && <Arrow direction={arrowDirection} />}
+      {children}
+    </Styles.Button>
+  );
+}

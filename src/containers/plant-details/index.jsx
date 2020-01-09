@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import SucculentBowl from "assets/images/plant-pictures/succulent-bowl.jpg";
-import { ReactComponent as LowSun } from "assets/icons/low-sun.svg";
+import SucculentBowl from 'assets/images/plant-pictures/succulent-bowl.jpg'
+import { ReactComponent as LowSun } from 'assets/icons/low-sun.svg'
 
-import * as Styles from "./styles";
+import * as Styles from './styles'
 
 export default function PlantDetails() {
   return (
@@ -24,5 +24,5 @@ export default function PlantDetails() {
         <p>Low sun</p>
       </Styles.Detail>
     </article>
-  );
+  )
 }

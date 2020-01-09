@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   align-items: center;
@@ -17,8 +17,8 @@ export const Wrapper = styled.div`
     color: #acacac;
     font-size: 16px;
   }
-`;
+`
 
 export const WrapperImage = styled.div`
   margin-right: 28px;
-`;
+`

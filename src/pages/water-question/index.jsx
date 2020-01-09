@@ -1,29 +1,29 @@
-import React from "react";
+import React from 'react'
 
-import Wateringcan from "assets/images/wateringcan.png";
-import OneDrop from "assets/images/inputs/water/one-drop.svg";
-import TwoDrops from "assets/images/inputs/water/two-drops.svg";
-import ThreeDrops from "assets/images/inputs/water/three-drops.svg";
+import Wateringcan from 'assets/images/wateringcan.png'
+import OneDrop from 'assets/images/inputs/water/one-drop.svg'
+import TwoDrops from 'assets/images/inputs/water/two-drops.svg'
+import ThreeDrops from 'assets/images/inputs/water/three-drops.svg'
 
-import Header from "components/header";
-import Container from "components/container";
-import Question from "containers/question";
+import Header from 'components/header'
+import Container from 'components/container'
+import Question from 'containers/question'
 
 export default function WaterQuestion() {
   const items = [
     {
       icon: OneDrop,
-      name: "Rarely"
+      name: 'Rarely'
     },
     {
       icon: TwoDrops,
-      name: "Regularly"
+      name: 'Regularly'
     },
     {
       icon: ThreeDrops,
-      name: "Daily"
+      name: 'Daily'
     }
-  ];
+  ]
 
   return (
     <Container>
@@ -40,5 +40,5 @@ export default function WaterQuestion() {
         items={items}
       />
     </Container>
-  );
+  )
 }

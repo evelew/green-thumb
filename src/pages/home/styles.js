@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import IllustrationMobile from "assets/images/illustration-home-mobile.png";
-import IllustrationDesktop from "assets/images/illustration-home-desktop.png";
+import IllustrationMobile from 'assets/images/illustration-home-mobile.png'
+import IllustrationDesktop from 'assets/images/illustration-home-desktop.png'
 
-import breakpoints from "common/breakpoints";
+import breakpoints from 'common/breakpoints'
 
 export const Content = styled.section`
   background-image: url(${IllustrationMobile});
@@ -31,7 +31,7 @@ export const Content = styled.section`
       margin: 0;
     }
   }
-`;
+`
 
 export const Title = styled.h1`
   font-size: 35px;
@@ -43,7 +43,7 @@ export const Title = styled.h1`
     text-align: left;
     width: 433px;
   }
-`;
+`
 
 export const LogoDesktop = styled.div`
   display: none;
@@ -58,4 +58,4 @@ export const LogoDesktop = styled.div`
   img {
     width: 100%;
   }
-`;
+`

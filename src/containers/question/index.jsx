@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-import Input from "components/input";
-import Button from "components/button";
-import * as Styles from "./styles";
+import Input from 'components/input'
+import Button from 'components/button'
+import * as Styles from './styles'
 
 export default function Question({
   imageSrc,
@@ -36,11 +36,11 @@ export default function Question({
       </Styles.WrapperOptions>
 
       <Styles.WrapperButtons>
-        <Button arrow>{nextButtonText ? nextButtonText : "next"}</Button>
+        <Button arrow>{nextButtonText ? nextButtonText : 'next'}</Button>
         <Button arrow theme="ghost" arrowDirection="left">
-          {prevButtonText ? prevButtonText : "previous"}
+          {prevButtonText ? prevButtonText : 'previous'}
         </Button>
       </Styles.WrapperButtons>
     </>
-  );
+  )
 }

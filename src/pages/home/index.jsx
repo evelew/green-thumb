@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react'
 
-import LogoGreenthumb from "assets/images/logo-greenthumb.svg";
+import LogoGreenthumb from 'assets/images/logo-greenthumb.svg'
 
-import Header from "components/header";
-import Container from "components/container";
-import Button from "components/button";
+import Header from 'components/header'
+import Container from 'components/container'
+import Button from 'components/button'
 
-import * as Styles from "./styles";
+import * as Styles from './styles'
 
 export default function Home() {
   return (
@@ -20,5 +20,5 @@ export default function Home() {
         <Button arrow>start quizz</Button>
       </Container>
     </Styles.Content>
-  );
+  )
 }

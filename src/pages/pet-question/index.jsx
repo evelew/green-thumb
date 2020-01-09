@@ -1,24 +1,24 @@
-import React from "react";
+import React from 'react'
 
-import Dog from "assets/images/dog.png";
-import Pet from "assets/images/inputs/pet/pet.svg";
-import NoAnswer from "assets/images/inputs/pet/no-answer.svg";
+import Dog from 'assets/images/dog.png'
+import Pet from 'assets/images/inputs/pet/pet.svg'
+import NoAnswer from 'assets/images/inputs/pet/no-answer.svg'
 
-import Header from "components/header";
-import Container from "components/container";
-import Question from "containers/question";
+import Header from 'components/header'
+import Container from 'components/container'
+import Question from 'containers/question'
 
 export default function PetQuestion() {
   const items = [
     {
       icon: Pet,
-      name: "Yes"
+      name: 'Yes'
     },
     {
       icon: NoAnswer,
       name: "No/They don't care"
     }
-  ];
+  ]
 
   return (
     <Container>
@@ -42,5 +42,5 @@ export default function PetQuestion() {
         nextButtonText="finish"
       />
     </Container>
-  );
+  )
 }

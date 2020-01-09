@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 
-import PonytailPalmImage from "assets/images/plant-pictures/ponytail-palm.jpg";
-import { ReactComponent as PetSvg } from "assets/images/inputs/pet/pet.svg";
+import PonytailPalmImage from 'assets/images/plant-pictures/ponytail-palm.jpg'
+import { ReactComponent as PetSvg } from 'assets/images/inputs/pet/pet.svg'
 
-import Button from "components/button";
-import * as Styles from "./styles";
+import Button from 'components/button'
+import * as Styles from './styles'
 
 export default function PlantCard() {
   return (
@@ -27,5 +27,5 @@ export default function PlantCard() {
         <Button>buy now</Button>
       </Styles.WrapperButton>
     </Styles.Card>
-  );
+  )
 }

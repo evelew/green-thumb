@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import Header from "components/header";
-import PlantDetails from "containers/plant-details";
+import Header from 'components/header'
+import PlantDetails from 'containers/plant-details'
 
-import * as Styles from "./styles";
+import * as Styles from './styles'
 
 export default function Purchase() {
   return (
@@ -39,5 +39,5 @@ export default function Purchase() {
         </form>
       </Styles.Contact>
     </Styles.Container>
-  );
+  )
 }

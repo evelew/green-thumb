@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import colors from "common/colors";
-import breakpoints from "common/breakpoints";
+import colors from 'common/colors'
+import breakpoints from 'common/breakpoints'
 
 export const Title = styled.h1`
   font-size: 35px;
@@ -10,12 +10,12 @@ export const Title = styled.h1`
   @media (${breakpoints.LARGE}) {
     font-size: 50px;
   }
-`;
+`
 
 export const Price = styled.p`
   color: #d6d6d6;
   font-size: 24px;
-`;
+`
 
 export const ImageWrapper = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ export const ImageWrapper = styled.div`
   @media (${breakpoints.LARGE}) {
     justify-content: flex-start;
   }
-`;
+`
 
 export const Detail = styled.div`
   align-items: center;
@@ -38,12 +38,12 @@ export const Detail = styled.div`
     width: 26px;
 
     g {
-      fill: ${colors["grey1"]};
+      fill: ${colors['grey1']};
     }
   }
 
   p {
-    color: ${colors["grey1"]};
+    color: ${colors['grey1']};
     font-size: 16px;
   }
-`;
+`

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import * as Styles from "./styles";
+import * as Styles from './styles'
 
 export default function Input({ icon, name }) {
   return (
@@ -11,5 +11,5 @@ export default function Input({ icon, name }) {
 
       <p>{name}</p>
     </Styles.Wrapper>
-  );
+  )
 }

@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import { default as ContainerBase } from "components/container";
-import Button from "components/button";
+import { default as ContainerBase } from 'components/container'
+import Button from 'components/button'
 
-import breakpoints from "common/breakpoints";
+import breakpoints from 'common/breakpoints'
 
 // export const Container = styled.section`
 export const Container = styled(ContainerBase)`
@@ -14,7 +14,7 @@ export const Container = styled(ContainerBase)`
     display: flex;
     min-height: 100vh;
   }
-`;
+`
 
 export const PlantDetails = styled(ContainerBase)`
   background: white;
@@ -24,7 +24,7 @@ export const PlantDetails = styled(ContainerBase)`
   @media (${breakpoints.LARGE}) {
     width: 378px;
   }
-`;
+`
 
 export const Contact = styled(ContainerBase)`
   min-height: 0;
@@ -35,7 +35,7 @@ export const Contact = styled(ContainerBase)`
     padding: 43px 48px;
     width: 381px;
   }
-`;
+`
 
 export const ContactTitle = styled.h2`
   font-size: 30px;
@@ -44,13 +44,13 @@ export const ContactTitle = styled.h2`
   @media (${breakpoints.LARGE}) {
     font-size: 40px;
   }
-`;
+`
 
 export const ContactIntro = styled.p`
   color: #6e6e6e;
   font-size: 16px;
   margin-bottom: 25px;
-`;
+`
 
 export const Label = styled.label`
   display: flex;
@@ -77,8 +77,8 @@ export const Label = styled.label`
     margin-top: 6px;
     padding: 6px 20px;
   }
-`;
+`
 
 export const SubmitButton = styled(Button)`
   width: 100%;
-`;
+`

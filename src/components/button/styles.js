@@ -1,10 +1,10 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
-import Colors from "common/colors";
+import Colors from 'common/colors'
 
 export const Button = styled.button`
   align-items: center;
-  background: ${Colors["darkGreen"]};
+  background: ${Colors['darkGreen']};
   border-radius: 25px;
   color: white;
   display: flex;
@@ -16,12 +16,12 @@ export const Button = styled.button`
     props.theme === 'ghost' &&
     css`
       background: transparent;
-      border: 1px solid ${Colors["darkGreen"]};
-      color: ${Colors["darkGreen"]};
+      border: 1px solid ${Colors['darkGreen']};
+      color: ${Colors['darkGreen']};
 
       svg {
         path {
-          stroke: ${Colors["darkGreen"]};
+          stroke: ${Colors['darkGreen']};
         }
       }
     `};
@@ -29,4 +29,4 @@ export const Button = styled.button`
   svg {
     margin-right: 12px;
   }
-`;
+`

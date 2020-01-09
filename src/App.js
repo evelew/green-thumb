@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import Purchase from "pages/purchase";
+import Purchase from 'pages/purchase'
 
 function App() {
-  return <Purchase />;
+  return <Purchase />
 }
 
-export default App;
+export default App

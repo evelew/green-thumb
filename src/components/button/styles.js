@@ -13,7 +13,7 @@ export const Button = styled.button`
   padding: 12px 16px;
 
   ${props =>
-    props.ghost &&
+    props.theme === 'ghost' &&
     css`
       background: transparent;
       border: 1px solid ${Colors["darkGreen"]};

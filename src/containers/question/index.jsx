@@ -37,7 +37,7 @@ export default function Question({
 
       <Styles.WrapperButtons>
         <Button arrow>{nextButtonText ? nextButtonText : "next"}</Button>
-        <Button ghost arrow arrowDirection="left">
+        <Button arrow theme="ghost" arrowDirection="left">
           {prevButtonText ? prevButtonText : "previous"}
         </Button>
       </Styles.WrapperButtons>

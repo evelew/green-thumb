@@ -1,11 +1,9 @@
 import React from "react";
 
-import Results from "pages/results";
+import Purchase from "pages/purchase";
 
 function App() {
-  return (
-    <Results />
-  );
+  return <Purchase />;
 }
 
 export default App;

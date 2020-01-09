@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Purchase from 'pages/purchase'
+import PurchaseThankYou from 'pages/purchase-thank-you'
 
 function App() {
-  return <Purchase />
+  return <PurchaseThankYou />
 }
 
 export default App

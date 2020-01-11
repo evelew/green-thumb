@@ -30,8 +30,8 @@ export default function Question({
       )}
 
       <Styles.WrapperOptions>
-        {items.map(item => (
-          <Input icon={item.icon} name={item.name} />
+        {items.map((item, index) => (
+          <Input icon={item.icon} name={item.name} key={index} />
         ))}
       </Styles.WrapperOptions>
 

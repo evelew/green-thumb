@@ -2,14 +2,15 @@ import React from 'react'
 
 import PickImage from 'assets/images/pick.png'
 
+import history from 'common/browser-history'
+
 import Header from 'components/header'
-import Container from 'components/container'
 import PlantCard from 'components/plant-card'
 import * as Styles from './styles'
 
 export default function Results() {
   return (
-    <Container>
+    <Styles.Container>
       <Header />
 
       <Styles.WrapperImage>
@@ -18,7 +19,7 @@ export default function Results() {
 
       <Styles.Title>Our picks for you</Styles.Title>
 
-      <PlantCard />
-    </Container>
+      <PlantCard onClickButton={() => history.push('/purchase')} />
+    </Styles.Container>
   )
 }

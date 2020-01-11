@@ -6,7 +6,7 @@ import { ReactComponent as PetSvg } from 'assets/images/inputs/pet/pet.svg'
 import Button from 'components/button'
 import * as Styles from './styles'
 
-export default function PlantCard() {
+export default function PlantCard({ onClickButton }) {
   return (
     <Styles.Card>
       <Styles.WrapperImage>
@@ -24,7 +24,7 @@ export default function PlantCard() {
       </Styles.Details>
 
       <Styles.WrapperButton>
-        <Button>buy now</Button>
+        <Button onClick={onClickButton}>buy now</Button>
       </Styles.WrapperButton>
     </Styles.Card>
   )

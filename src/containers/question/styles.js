@@ -31,7 +31,7 @@ export const WrapperButtons = styled.div`
   align-items: center;
   display: flex;
   flex-flow: column;
-  margin: 37px 0;
+  padding: 37px 0;
 
   button {
     width: 146px;

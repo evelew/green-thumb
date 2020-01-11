@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 
+import { default as ContainerBase } from 'components/container'
+
+export const Container = styled(ContainerBase)`
+  padding-bottom: 80px;
+`
+
 export const WrapperImage = styled.div`
   display: flex;
   justify-content: center;

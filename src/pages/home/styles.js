@@ -3,9 +3,13 @@ import styled from 'styled-components'
 import IllustrationMobile from 'assets/images/illustration-home-mobile.png'
 import IllustrationDesktop from 'assets/images/illustration-home-desktop.png'
 
+import { default as ContainerBase } from 'components/container'
+
 import breakpoints from 'common/breakpoints'
+import colors from 'common/colors'
 
 export const Content = styled.section`
+  background-color: ${colors['grey']};
   background-image: url(${IllustrationMobile});
   background-repeat: no-repeat;
   background-size: 98%;
@@ -31,6 +35,10 @@ export const Content = styled.section`
       margin: 0;
     }
   }
+`
+
+export const Container = styled(ContainerBase)`
+  background: transparent;
 `
 
 export const Title = styled.h1`

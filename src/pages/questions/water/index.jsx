@@ -5,6 +5,8 @@ import OneDrop from 'assets/images/inputs/water/one-drop.svg'
 import TwoDrops from 'assets/images/inputs/water/two-drops.svg'
 import ThreeDrops from 'assets/images/inputs/water/three-drops.svg'
 
+import history from 'common/browser-history'
+
 import Header from 'components/header'
 import Container from 'components/container'
 import Question from 'containers/question'
@@ -38,6 +40,8 @@ export default function WaterQuestion() {
         imageSrc={Wateringcan}
         imageAlt=""
         items={items}
+        onClickPrevButton={() => history.push('/questions/sunlight')}
+        onClickNextButton={() => history.push('/questions/pet')}
       />
     </Container>
   )

@@ -11,7 +11,9 @@ export default function Question({
   subtitle: Subtitle,
   title: Title,
   nextButtonText,
-  prevButtonText
+  prevButtonText,
+  onClickPrevButton,
+  onClickNextButton
 }) {
   return (
     <>
@@ -36,8 +38,16 @@ export default function Question({
       </Styles.WrapperOptions>
 
       <Styles.WrapperButtons>
-        <Button arrow>{nextButtonText ? nextButtonText : 'next'}</Button>
-        <Button arrow theme="ghost" arrowDirection="left">
+        <Button arrow onClick={onClickNextButton}>
+          {nextButtonText ? nextButtonText : 'next'}
+        </Button>
+        
+        <Button
+          arrow
+          theme="ghost"
+          arrowDirection="left"
+          onClick={onClickPrevButton}
+        >
           {prevButtonText ? prevButtonText : 'previous'}
         </Button>
       </Styles.WrapperButtons>

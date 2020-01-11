@@ -4,6 +4,8 @@ import Dog from 'assets/images/dog.png'
 import Pet from 'assets/images/inputs/pet/pet.svg'
 import NoAnswer from 'assets/images/inputs/pet/no-answer.svg'
 
+import history from 'common/browser-history'
+
 import Header from 'components/header'
 import Container from 'components/container'
 import Question from 'containers/question'
@@ -40,6 +42,8 @@ export default function PetQuestion() {
         imageAlt=""
         items={items}
         nextButtonText="finish"
+        onClickPrevButton={() => history.push('/questions/water')}
+        onClickNextButton={() => history.push('/results')}
       />
     </Container>
   )

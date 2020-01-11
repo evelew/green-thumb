@@ -1,9 +1,22 @@
 import React from 'react'
 
+import history from 'common/browser-history'
+
 import PurchaseTemplate from 'containers/purchase-template'
 import * as Styles from './styles'
 
 export default function Purchase() {
+  const onSubmit = () => {
+    sendForm()
+    goToNextRoute()
+  }
+
+  const sendForm = () => {
+    console.log('send form')
+  }
+
+  const goToNextRoute = () => history.push('/purchase/thank-you')
+
   return (
     <PurchaseTemplate
       bottomContent={() => (
@@ -14,7 +27,7 @@ export default function Purchase() {
             order ;)
           </Styles.ContactIntro>
 
-          <form>
+          <form onSubmit={onSubmit}>
             <Styles.Label>
               <strong>Name</strong>
               <input type="text" name="name" placeholder="Crazy Plant Person" />

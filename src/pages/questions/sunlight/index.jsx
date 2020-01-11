@@ -5,6 +5,8 @@ import HighSun from 'assets/images/inputs/sunlight/high-sun.svg'
 import LowSun from 'assets/images/inputs/sunlight/low-sun.svg'
 import NoSun from 'assets/images/inputs/sunlight/no-answer.svg'
 
+import history from 'common/browser-history'
+
 import Header from 'components/header'
 import Container from 'components/container'
 import Question from 'containers/question'
@@ -40,6 +42,8 @@ export default function SunlightQuestion() {
         imageAlt="Sol de óculos escuro"
         items={items}
         prevButtonText="home"
+        onClickPrevButton={() => history.push('/')}
+        onClickNextButton={() => history.push('/questions/water')}
       />
     </Container>
   )

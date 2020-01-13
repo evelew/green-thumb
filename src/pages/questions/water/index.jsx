@@ -11,6 +11,8 @@ import Header from 'components/header'
 import Container from 'components/container'
 import Question from 'containers/question'
 
+import { BackgroundPage } from '../styles'
+
 export default function WaterQuestion() {
   const items = [
     {
@@ -28,21 +30,23 @@ export default function WaterQuestion() {
   ]
 
   return (
-    <Container>
-      <Header />
+    <BackgroundPage>
+      <Container>
+        <Header />
 
-      <Question
-        title={() => (
-          <>
-            How often do you want to <strong>water</strong> your plant?
-          </>
-        )}
-        imageSrc={Wateringcan}
-        imageAlt=""
-        items={items}
-        onClickPrevButton={() => history.push('/questions/sunlight')}
-        onClickNextButton={() => history.push('/questions/pet')}
-      />
-    </Container>
+        <Question
+          title={() => (
+            <>
+              How often do you want to <strong>water</strong> your plant?
+            </>
+          )}
+          imageSrc={Wateringcan}
+          imageAlt=""
+          items={items}
+          onClickPrevButton={() => history.push('/questions/sunlight')}
+          onClickNextButton={() => history.push('/questions/pet')}
+        />
+      </Container>
+    </BackgroundPage>
   )
 }

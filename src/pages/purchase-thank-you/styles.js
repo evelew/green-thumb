@@ -4,7 +4,6 @@ import colors from 'common/colors'
 import breakpoints from 'common/breakpoints'
 
 export const MessageWrapper = styled.article`
-  background: ${colors['grey']};
   padding: 26px;
 
   @media (${breakpoints.LARGE}) {

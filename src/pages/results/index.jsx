@@ -10,16 +10,18 @@ import * as Styles from './styles'
 
 export default function Results() {
   return (
-    <Styles.Container>
-      <Header />
+    <Styles.BackgroundPage>
+      <Styles.Container>
+        <Header />
 
-      <Styles.WrapperImage>
-        <img src={PickImage} alt="" />
-      </Styles.WrapperImage>
+        <Styles.WrapperImage>
+          <img src={PickImage} alt="" />
+        </Styles.WrapperImage>
 
-      <Styles.Title>Our picks for you</Styles.Title>
+        <Styles.Title>Our picks for you</Styles.Title>
 
-      <PlantCard onClickButton={() => history.push('/purchase')} />
-    </Styles.Container>
+        <PlantCard onClickButton={() => history.push('/purchase')} />
+      </Styles.Container>
+    </Styles.BackgroundPage>
   )
 }

@@ -2,6 +2,17 @@ import styled from 'styled-components'
 
 import { default as ContainerBase } from 'components/container'
 
+import colors from 'common/colors'
+import breakpoints from 'common/breakpoints'
+
+export const BackgroundPage = styled.div`
+  background-color: ${colors['grey']};
+
+  @media (${breakpoints.MEDIUM}) {
+    padding-top: 60px;
+  }
+`
+
 export const Container = styled(ContainerBase)`
   padding-bottom: 80px;
 `

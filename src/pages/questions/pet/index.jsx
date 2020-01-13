@@ -10,6 +10,8 @@ import Header from 'components/header'
 import Container from 'components/container'
 import Question from 'containers/question'
 
+import { BackgroundPage } from '../styles'
+
 export default function PetQuestion() {
   const items = [
     {
@@ -23,28 +25,30 @@ export default function PetQuestion() {
   ]
 
   return (
-    <Container>
-      <Header />
+    <BackgroundPage>
+      <Container>
+        <Header />
 
-      <Question
-        title={() => (
-          <>
-            Do you have pets? Do they <strong>chew</strong> plants?
-          </>
-        )}
-        subtitle={() => (
-          <>
-            We are asking because some plants can be <strong>toxic</strong> for
-            your buddy.
-          </>
-        )}
-        imageSrc={Dog}
-        imageAlt=""
-        items={items}
-        nextButtonText="finish"
-        onClickPrevButton={() => history.push('/questions/water')}
-        onClickNextButton={() => history.push('/results')}
-      />
-    </Container>
+        <Question
+          title={() => (
+            <>
+              Do you have pets? Do they <strong>chew</strong> plants?
+            </>
+          )}
+          subtitle={() => (
+            <>
+              We are asking because some plants can be <strong>toxic</strong>{' '}
+              for your buddy.
+            </>
+          )}
+          imageSrc={Dog}
+          imageAlt=""
+          items={items}
+          nextButtonText="finish"
+          onClickPrevButton={() => history.push('/questions/water')}
+          onClickNextButton={() => history.push('/results')}
+        />
+      </Container>
+    </BackgroundPage>
   )
 }

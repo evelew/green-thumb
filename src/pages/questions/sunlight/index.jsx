@@ -11,6 +11,8 @@ import Header from 'components/header'
 import Container from 'components/container'
 import Question from 'containers/question'
 
+import { BackgroundPage } from '../styles'
+
 export default function SunlightQuestion() {
   const items = [
     {
@@ -28,23 +30,25 @@ export default function SunlightQuestion() {
   ]
 
   return (
-    <Container>
-      <Header />
+    <BackgroundPage>
+      <Container>
+        <Header />
 
-      <Question
-        title={() => (
-          <>
-            First set the amount of <strong>sunlight</strong> your plant will
-            get.
-          </>
-        )}
-        imageSrc={Sun}
-        imageAlt="Sol de óculos escuro"
-        items={items}
-        prevButtonText="home"
-        onClickPrevButton={() => history.push('/')}
-        onClickNextButton={() => history.push('/questions/water')}
-      />
-    </Container>
+        <Question
+          title={() => (
+            <>
+              First set the amount of <strong>sunlight</strong> your plant will
+              get.
+            </>
+          )}
+          imageSrc={Sun}
+          imageAlt="Sol de óculos escuro"
+          items={items}
+          prevButtonText="home"
+          onClickPrevButton={() => history.push('/')}
+          onClickNextButton={() => history.push('/questions/water')}
+        />
+      </Container>
+    </BackgroundPage>
   )
 }

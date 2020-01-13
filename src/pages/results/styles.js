@@ -32,4 +32,18 @@ export const Title = styled.h1`
   margin: 0 auto 28px auto;
   text-align: center;
   width: 240px;
+
+  @media (${breakpoints.LARGE}) {
+    font-size: 65px;
+    width: auto;
+  }
+`
+
+export const WrapperPlantCards = styled.div`
+  @media (${breakpoints.LARGE}) {
+    display: grid;
+    grid-template-columns: 268px 268px 268px;
+    justify-content: center;
+    grid-gap: 50px 30px;
+  }
 `

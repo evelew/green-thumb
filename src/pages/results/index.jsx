@@ -20,7 +20,14 @@ export default function Results() {
 
         <Styles.Title>Our picks for you</Styles.Title>
 
-        <PlantCard onClickButton={() => history.push('/purchase')} />
+        <Styles.WrapperPlantCards>
+          <PlantCard onClickButton={() => history.push('/purchase')} />
+          <PlantCard onClickButton={() => history.push('/purchase')} />
+          <PlantCard onClickButton={() => history.push('/purchase')} />
+          <PlantCard onClickButton={() => history.push('/purchase')} />
+          <PlantCard onClickButton={() => history.push('/purchase')} />
+          <PlantCard onClickButton={() => history.push('/purchase')} />
+        </Styles.WrapperPlantCards>
       </Styles.Container>
     </Styles.BackgroundPage>
   )

@@ -25,6 +25,12 @@ export const Wrapper = styled.div`
     @media (${breakpoints.LARGE}) {
       background: ${props => (props.color ? props.color : colors['coral'])};
 
+      svg {
+        path {
+          fill: white;
+        }
+      }
+
       p {
         color: white;
       }
@@ -33,6 +39,12 @@ export const Wrapper = styled.div`
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  svg {
+    path {
+      fill: ${props => (props.color ? props.color : colors['coral'])};
+    }
   }
 
   p {

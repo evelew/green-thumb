@@ -37,7 +37,7 @@ export const Detail = styled.div`
     margin-right: 10px;
     width: 26px;
 
-    g {
+    path {
       fill: ${colors['grey1']};
     }
   }

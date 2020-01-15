@@ -1,9 +1,9 @@
 import React from 'react'
 
 import Wateringcan from 'assets/images/wateringcan.png'
-import { ReactComponent as OneDrop } from 'assets/images/inputs/water/one-drop.svg'
-import { ReactComponent as TwoDrops } from 'assets/images/inputs/water/two-drops.svg'
-import { ReactComponent as ThreeDrops } from 'assets/images/inputs/water/three-drops.svg'
+import { ReactComponent as OneDrop } from 'assets/icons/one-drop.svg'
+import { ReactComponent as TwoDrops } from 'assets/icons/two-drops.svg'
+import { ReactComponent as ThreeDrops } from 'assets/icons/three-drops.svg'
 
 import history from 'common/browser-history'
 

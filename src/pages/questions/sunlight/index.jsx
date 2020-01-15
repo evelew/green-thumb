@@ -1,9 +1,9 @@
 import React from 'react'
 
 import Sun from 'assets/images/sun.png'
-import { ReactComponent as HighSun } from 'assets/images/inputs/sunlight/high-sun.svg'
-import { ReactComponent as LowSun } from 'assets/images/inputs/sunlight/low-sun.svg'
-import { ReactComponent as NoSun } from 'assets/images/inputs/sunlight/no-answer.svg'
+import { ReactComponent as HighSun } from 'assets/icons/high-sun.svg'
+import { ReactComponent as LowSun } from 'assets/icons/low-sun.svg'
+import { ReactComponent as NoSun } from 'assets/icons/no-answer.svg'
 
 import history from 'common/browser-history'
 

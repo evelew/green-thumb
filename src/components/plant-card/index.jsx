@@ -1,7 +1,7 @@
 import React from 'react'
 
 import PonytailPalmImage from 'assets/images/plant-pictures/ponytail-palm.jpg'
-import { ReactComponent as PetSvg } from 'assets/icons/pet.svg'
+import { ReactComponent as PetSvg } from 'assets/icons/two-drops.svg'
 
 import Button from 'components/button'
 import * as Styles from './styles'

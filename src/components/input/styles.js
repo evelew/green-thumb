@@ -18,6 +18,7 @@ export const Wrapper = styled.div`
     flex-flow: column;
     height: 190px;
     justify-content: center;
+    padding: 26px;
     width: 215px;
   }
 
@@ -33,6 +34,7 @@ export const Wrapper = styled.div`
 
       p {
         color: white;
+        text-align: center;
       }
     }
   }
@@ -42,6 +44,8 @@ export const Wrapper = styled.div`
   }
 
   svg {
+    width: 75px;
+
     path {
       fill: ${props => (props.color ? props.color : colors['coral'])};
     }

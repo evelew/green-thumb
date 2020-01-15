@@ -11,6 +11,7 @@ export default function Question({
   items,
   subtitle: Subtitle,
   title: Title,
+  color,
   nextButtonText,
   prevButtonText,
   onClickPrevButton,
@@ -34,7 +35,7 @@ export default function Question({
 
       <Styles.WrapperOptions>
         {items.map((item, index) => (
-          <Input icon={item.icon} name={item.name} key={index} />
+          <Input icon={item.icon} name={item.name} color={color} key={index} />
         ))}
       </Styles.WrapperOptions>
 

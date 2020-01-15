@@ -6,6 +6,7 @@ import { ReactComponent as TwoDrops } from 'assets/icons/two-drops.svg'
 import { ReactComponent as ThreeDrops } from 'assets/icons/three-drops.svg'
 
 import history from 'common/browser-history'
+import colors from 'common/colors'
 
 import Header from 'components/header'
 import Container from 'components/container'
@@ -43,6 +44,7 @@ export default function WaterQuestion() {
           imageSrc={Wateringcan}
           imageAlt=""
           items={items}
+          color={colors['green']}
           onClickPrevButton={() => history.push('/questions/sunlight')}
           onClickNextButton={() => history.push('/questions/pet')}
         />

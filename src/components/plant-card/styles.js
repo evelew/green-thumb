@@ -31,6 +31,10 @@ export const DetailsIcons = styled.div`
     height: auto;
     margin: 0 4px;
     width: 25px;
+
+    path {
+      fill: ${colors['grey1']};
+    }
   }
 `
 

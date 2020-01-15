@@ -30,14 +30,35 @@ export const Subtitle = styled.p`
   text-align: center;
 `
 
+export const WrapperContent = styled.div`
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+`
+
 export const WrapperOptions = styled.div`
   margin-top: 30px;
 
   @media (${breakpoints.LARGE}) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
     margin: 65px auto 0 auto;
-    width: 705px;
+  }
+
+  > div {
+    margin-bottom: 20px;
+
+    @media (${breakpoints.LARGE}) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+
+    &:last-of-type {
+      @media (${breakpoints.LARGE}) {
+        margin-right: 0;
+      }
+    }
   }
 `
 
@@ -48,10 +69,10 @@ export const WrapperButtons = styled.div`
   padding: 37px 0;
 
   @media (${breakpoints.LARGE}) {
+    display: flex;
     flex-flow: row-reverse;
     justify-content: space-between;
-    margin: 0 auto;
-    width: 705px;
+    width: 100%;
   }
 
   button {

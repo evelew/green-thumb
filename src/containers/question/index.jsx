@@ -33,26 +33,35 @@ export default function Question({
         </Styles.Subtitle>
       )}
 
-      <Styles.WrapperOptions>
-        {items.map((item, index) => (
-          <Input icon={item.icon} name={item.name} color={color} key={index} />
-        ))}
-      </Styles.WrapperOptions>
+      <Styles.WrapperContent>
+        <div>
+          <Styles.WrapperOptions>
+            {items.map((item, index) => (
+              <Input
+                icon={item.icon}
+                name={item.name}
+                color={color}
+                key={index}
+              />
+            ))}
+          </Styles.WrapperOptions>
 
-      <Styles.WrapperButtons>
-        <Button arrow onClick={onClickNextButton}>
-          {nextButtonText ? nextButtonText : 'next'}
-        </Button>
+          <Styles.WrapperButtons>
+            <Button arrow onClick={onClickNextButton}>
+              {nextButtonText ? nextButtonText : 'next'}
+            </Button>
 
-        <Button
-          arrow
-          theme="ghost"
-          arrowDirection="left"
-          onClick={onClickPrevButton}
-        >
-          {prevButtonText ? prevButtonText : 'previous'}
-        </Button>
-      </Styles.WrapperButtons>
+            <Button
+              arrow
+              theme="ghost"
+              arrowDirection="left"
+              onClick={onClickPrevButton}
+            >
+              {prevButtonText ? prevButtonText : 'previous'}
+            </Button>
+          </Styles.WrapperButtons>
+        </div>
+      </Styles.WrapperContent>
     </>
   )
 }

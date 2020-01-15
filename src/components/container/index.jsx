@@ -4,7 +4,7 @@ import colors from 'common/colors'
 import breakpoints from 'common/breakpoints'
 
 export default styled.div`
-  background-color: ${colors['grey']};
+  background-color: ${colors['wildSand']};
   min-height: 100vh;
   margin: 0 auto;
   max-width: 600px;

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { default as ContainerBase } from 'components/container'
 import Button from 'components/button'
 
+import colors from 'common/colors'
 import breakpoints from 'common/breakpoints'
 
 export const Contact = styled(ContainerBase)`
@@ -26,7 +27,7 @@ export const ContactTitle = styled.h2`
 `
 
 export const ContactIntro = styled.p`
-  color: #6e6e6e;
+  color: ${colors['doveGray']};
   font-size: 16px;
   margin-bottom: 25px;
 `
@@ -41,7 +42,7 @@ export const Label = styled.label`
   }
 
   strong {
-    color: #6e6e6e;
+    color: ${colors['doveGray']};
     font-size: 16px;
     margin-left: 15px;
   }
@@ -50,7 +51,7 @@ export const Label = styled.label`
     background: white;
     border: none;
     border-radius: 19px;
-    color: #d0d0d0;
+    color: ${colors['alto']};
     font-size: 14px;
     height: 40px;
     margin-top: 6px;

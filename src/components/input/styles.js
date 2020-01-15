@@ -52,7 +52,7 @@ export const Wrapper = styled.div`
   }
 
   p {
-    color: #acacac;
+    color: ${colors['silverChalice']};
     font-size: 16px;
 
     @media (${breakpoints.LARGE}) {

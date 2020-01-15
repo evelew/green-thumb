@@ -13,7 +13,7 @@ export const Title = styled.h1`
 `
 
 export const Price = styled.p`
-  color: #d6d6d6;
+  color: ${colors['alto']};
   font-size: 24px;
 `
 
@@ -38,12 +38,12 @@ export const Detail = styled.div`
     width: 26px;
 
     path {
-      fill: ${colors['grey1']};
+      fill: ${colors['doveGray']};
     }
   }
 
   p {
-    color: ${colors['grey1']};
+    color: ${colors['doveGray']};
     font-size: 16px;
   }
 `

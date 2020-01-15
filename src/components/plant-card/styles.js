@@ -13,7 +13,7 @@ export const WrapperImage = styled.div`
 `
 
 export const Name = styled.h2`
-  color: ${colors['darkGreen']};
+  color: ${colors['greenPea']};
   font-size: 18px;
   margin-bottom: 4px;
 `
@@ -33,13 +33,13 @@ export const DetailsIcons = styled.div`
     width: 25px;
 
     path {
-      fill: ${colors['grey1']};
+      fill: ${colors['doveGray']};
     }
   }
 `
 
 export const Price = styled.p`
-  color: ${colors['grey1']};
+  color: ${colors['doveGray']};
   font-size: 18px;
 `
 

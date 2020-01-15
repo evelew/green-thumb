@@ -31,5 +31,5 @@ export const PlantDetails = styled(ContainerBase)`
 `
 
 export const WrapperBottomContent = styled.div`
-  background-color: ${colors['grey']};
+  background-color: ${colors['wildSand']};
 `

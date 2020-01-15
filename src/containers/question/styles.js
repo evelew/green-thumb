@@ -10,7 +10,7 @@ export const WrapperImage = styled.div`
 `
 
 export const Title = styled.h1`
-  color: ${colors['grey1']};
+  color: ${colors['doveGray']};
   font-size: 22px;
   font-weight: normal;
   text-align: center;
@@ -23,7 +23,7 @@ export const Title = styled.h1`
 `
 
 export const Subtitle = styled.p`
-  color: ${colors['grey1']};
+  color: ${colors['doveGray']};
   font-size: 14px;
   margin-top: 11px;
   padding: 0 18px;

@@ -44,7 +44,7 @@ export default function WaterQuestion() {
           imageSrc={Wateringcan}
           imageAlt=""
           items={items}
-          color={colors['green']}
+          color={colors['acapulco']}
           onClickPrevButton={() => history.push('/questions/sunlight')}
           onClickNextButton={() => history.push('/questions/pet')}
         />

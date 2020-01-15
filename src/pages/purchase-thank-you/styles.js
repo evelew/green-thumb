@@ -17,14 +17,14 @@ export const MessageWrapper = styled.article`
 `
 
 export const Title = styled.h2`
-  color: #0c261c;
+  color: ${colors['bush']};
   font-size: 30px;
   margin-bottom: 20px;
   text-align: center;
 `
 
 export const Message = styled.p`
-  color: ${colors['grey1']};
+  color: ${colors['doveGray']};
   font-size: 16px;
   margin-bottom: 30px;
   text-align: center;

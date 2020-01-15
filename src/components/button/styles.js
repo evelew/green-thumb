@@ -5,7 +5,7 @@ import breakpoints from 'common/breakpoints'
 
 export const Button = styled.button`
   align-items: center;
-  background: ${colors['darkGreen']};
+  background: ${colors['greenPea']};
   border-radius: 25px;
   color: white;
   display: flex;
@@ -17,23 +17,23 @@ export const Button = styled.button`
     props.theme === 'ghost' &&
     css`
       background: transparent;
-      border: 1px solid ${colors['darkGreen']};
-      color: ${colors['darkGreen']};
+      border: 1px solid ${colors['greenPea']};
+      color: ${colors['greenPea']};
 
       svg {
         path {
-          stroke: ${colors['darkGreen']};
+          stroke: ${colors['greenPea']};
         }
       }
     `};
 
   @media (${breakpoints.LARGE}) {
     background: transparent;
-    border: 1px solid ${colors['darkGreen']};
-    color: ${colors['darkGreen']};
+    border: 1px solid ${colors['greenPea']};
+    color: ${colors['greenPea']};
 
     &:hover {
-      background: ${colors['darkGreen']};
+      background: ${colors['greenPea']};
       color: white;
 
       svg {
@@ -45,7 +45,7 @@ export const Button = styled.button`
 
     svg {
       path {
-        stroke: ${colors['darkGreen']};
+        stroke: ${colors['greenPea']};
       }
     }
   }

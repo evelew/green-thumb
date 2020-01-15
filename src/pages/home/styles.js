@@ -9,7 +9,7 @@ import breakpoints from 'common/breakpoints'
 import colors from 'common/colors'
 
 export const Content = styled.section`
-  background-color: ${colors['grey']};
+  background-color: ${colors['wildSand']};
   background-image: url(${IllustrationMobile});
   background-repeat: no-repeat;
   background-size: 98%;

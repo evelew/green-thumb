@@ -4,6 +4,7 @@ import Dog from 'assets/images/dog.png'
 import { ReactComponent as Pet } from 'assets/icons/pet.svg'
 import { ReactComponent as NoAnswer } from 'assets/icons/no-answer.svg'
 
+import { useStateValue } from 'store'
 import history from 'common/browser-history'
 
 import Header from 'components/header'
@@ -13,14 +14,28 @@ import Question from 'containers/question'
 import { BackgroundPage } from '../styles'
 
 export default function PetQuestion() {
+  const [{}, dispatch] = useStateValue()
+
   const items = [
     {
       icon: Pet,
-      name: 'Yes'
+      name: 'Yes',
+      onClick: () => {
+        dispatch({
+          type: 'setPet',
+          value: true
+        })
+      }
     },
     {
       icon: NoAnswer,
-      name: "No/They don't care"
+      name: "No/They don't care",
+      onClick: () => {
+        dispatch({
+          type: 'setPet',
+          value: false
+        })
+      }
     }
   ]
 

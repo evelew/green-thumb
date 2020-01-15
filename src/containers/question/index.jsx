@@ -38,10 +38,9 @@ export default function Question({
           <Styles.WrapperOptions>
             {items.map((item, index) => (
               <Input
-                icon={item.icon}
-                name={item.name}
                 color={color}
                 key={index}
+                {...item}
               />
             ))}
           </Styles.WrapperOptions>

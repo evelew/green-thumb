@@ -5,6 +5,7 @@ import { ReactComponent as OneDrop } from 'assets/icons/one-drop.svg'
 import { ReactComponent as TwoDrops } from 'assets/icons/two-drops.svg'
 import { ReactComponent as ThreeDrops } from 'assets/icons/three-drops.svg'
 
+import { useStateValue } from 'store'
 import history from 'common/browser-history'
 import colors from 'common/colors'
 
@@ -15,18 +16,38 @@ import Question from 'containers/question'
 import { BackgroundPage } from '../styles'
 
 export default function WaterQuestion() {
+  const [{}, dispatch] = useStateValue()
+
   const items = [
     {
       icon: OneDrop,
-      name: 'Rarely'
+      name: 'Rarely',
+      onClick: () => {
+        dispatch({
+          type: 'setWater',
+          value: 'rarely'
+        })
+      }
     },
     {
       icon: TwoDrops,
-      name: 'Regularly'
+      name: 'Regularly',
+      onClick: () => {
+        dispatch({
+          type: 'setWater',
+          value: 'regularly'
+        })
+      }
     },
     {
       icon: ThreeDrops,
-      name: 'Daily'
+      name: 'Daily',
+      onClick: () => {
+        dispatch({
+          type: 'setWater',
+          value: 'daily'
+        })
+      }
     }
   ]
 

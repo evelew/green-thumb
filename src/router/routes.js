@@ -1,6 +1,8 @@
 import React from 'react'
 import UniversalRouter from 'universal-router'
 
+import AppStore from 'store/AppStore'
+
 import Home from 'pages/home'
 import SunlightQuestion from 'pages/questions/sunlight'
 import WaterQuestion from 'pages/questions/water'
@@ -13,7 +15,7 @@ const routes = {
   path: '/',
   async action({ next }) {
     const children = await next()
-    return <div>{children}</div>
+    return <AppStore>{children}</AppStore>
   },
   children: [
     {

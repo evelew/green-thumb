@@ -44,7 +44,7 @@ export default function SunlightQuestion() {
       onClick: () => {
         dispatch({
           type: 'setSunlight',
-          value: false
+          value: 'no'
         })
       }
     }

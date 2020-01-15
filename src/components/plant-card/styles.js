@@ -4,12 +4,17 @@ import colors from 'common/colors'
 
 export const Card = styled.div`
   background: white;
+  border-radius: 5px;
   padding: 22px 28px;
 `
 
 export const WrapperImage = styled.div`
   display: flex;
   justify-content: center;
+
+  img {
+    width: 100%;
+  }
 `
 
 export const Name = styled.h2`

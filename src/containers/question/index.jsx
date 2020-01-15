@@ -2,6 +2,7 @@ import React from 'react'
 
 import Input from 'components/input'
 import Button from 'components/button'
+
 import * as Styles from './styles'
 
 export default function Question({
@@ -41,7 +42,7 @@ export default function Question({
         <Button arrow onClick={onClickNextButton}>
           {nextButtonText ? nextButtonText : 'next'}
         </Button>
-        
+
         <Button
           arrow
           theme="ghost"

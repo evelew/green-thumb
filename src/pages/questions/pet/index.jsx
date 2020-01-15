@@ -1,8 +1,8 @@
 import React from 'react'
 
 import Dog from 'assets/images/dog.png'
-import Pet from 'assets/images/inputs/pet/pet.svg'
-import NoAnswer from 'assets/images/inputs/pet/no-answer.svg'
+import { ReactComponent as Pet } from 'assets/images/inputs/pet/pet.svg'
+import { ReactComponent as NoAnswer } from 'assets/images/inputs/pet/no-answer.svg'
 
 import history from 'common/browser-history'
 

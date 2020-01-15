@@ -2,12 +2,12 @@ import React from 'react'
 
 import * as Styles from './styles'
 
-export default function Input({ icon, name }) {
+export default function Input({ icon: Icon, name, color }) {
   return (
-    <Styles.Wrapper>
-      <Styles.WrapperImage>
-        <img src={icon} alt="" />
-      </Styles.WrapperImage>
+    <Styles.Wrapper color={color}>
+      <Styles.WrapperIcon>
+        <Icon />
+      </Styles.WrapperIcon>
 
       <p>{name}</p>
     </Styles.Wrapper>

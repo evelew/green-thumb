@@ -6,5 +6,6 @@ export default {
   doveGray: '#6E6E6E',
   silverChalice: '#ACACAC',
   alto: '#D6D6D6',
-  bush: '#0C261C'
+  bush: '#0C261C',
+  torchRed: '#F71D1D'
 }

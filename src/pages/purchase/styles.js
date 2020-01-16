@@ -49,13 +49,39 @@ export const Label = styled.label`
 
   input {
     background: white;
-    border: none;
+    border: 1px solid;
+    border-color: ${props =>
+      props.isInvalid === true ? colors['torchRed'] : 'transparent'};
     border-radius: 19px;
     color: ${colors['alto']};
     font-size: 14px;
     height: 40px;
     margin-top: 6px;
+    outline: none;
     padding: 6px 20px;
+
+    ::placeholder {
+      color: ${colors['alto']};
+    }
+  }
+`
+
+export const MessageError = styled.p`
+  color: ${colors['torchRed']};
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 0 4px;
+
+  span {
+    background-color: ${colors['torchRed']};
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    height: 14px;
+    line-height: 15px;
+    margin-right: 7px;
+    text-align: center;
+    width: 14px;
   }
 `
 

@@ -7,21 +7,17 @@ import * as Styles from './styles'
 
 export default function PurchaseThankYou() {
   return (
-    <>
-      <PurchaseTemplate
-        bottomContent={() => (
-          <Styles.MessageWrapper>
-            <Styles.Title>Thank you!</Styles.Title>
-            <Styles.Message>
-              You will hear from us soon. Please check yout e-mail!
-            </Styles.Message>
+    <PurchaseTemplate>
+      <Styles.MessageWrapper>
+        <Styles.Title>Thank you!</Styles.Title>
+        <Styles.Message>
+          You will hear from us soon. Please check yout e-mail!
+        </Styles.Message>
 
-            <Styles.ImageWrapper>
-              <img src={EnvelopImage} alt="" />
-            </Styles.ImageWrapper>
-          </Styles.MessageWrapper>
-        )}
-      />
-    </>
+        <Styles.ImageWrapper>
+          <img src={EnvelopImage} alt="" />
+        </Styles.ImageWrapper>
+      </Styles.MessageWrapper>
+    </PurchaseTemplate>
   )
 }

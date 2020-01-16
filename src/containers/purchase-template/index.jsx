@@ -6,7 +6,7 @@ import PlantDetails from 'containers/plant-details'
 
 import * as Styles from './styles'
 
-export default function PurchaseTemplate({ bottomContent: BottomContent }) {
+export default function PurchaseTemplate({ children }) {
   return (
     <Styles.PageContent>
       <Styles.Container>
@@ -20,7 +20,7 @@ export default function PurchaseTemplate({ bottomContent: BottomContent }) {
 
       <Styles.WrapperBottomContent>
         <Styles.Container>
-          <BottomContent />
+          {children}
         </Styles.Container>
       </Styles.WrapperBottomContent>
     </Styles.PageContent>

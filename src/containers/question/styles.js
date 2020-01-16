@@ -7,6 +7,10 @@ export const WrapperImage = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 25px;
+
+  @media (${breakpoints.MEDIUM}) {
+    padding-top: 60px;
+  }
 `
 
 export const Title = styled.h1`

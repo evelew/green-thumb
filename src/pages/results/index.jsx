@@ -7,6 +7,7 @@ import history from 'common/browser-history'
 import { fetchData } from 'api'
 
 import Header from 'components/header'
+import DesktopLogo from 'components/desktop-logo'
 import PlantCard from 'components/plant-card'
 
 import * as Styles from './styles'
@@ -35,6 +36,7 @@ export default function Results() {
     <Styles.BackgroundPage>
       <Styles.Container>
         <Header />
+        <DesktopLogo />
 
         <Styles.WrapperImage>
           <img src={PickImage} alt="" />
@@ -50,11 +52,6 @@ export default function Results() {
               {...plant}
             />
           ))}
-          {/* <PlantCard onClickButton={() => history.push('/purchase')} />
-          <PlantCard onClickButton={() => history.push('/purchase')} />
-          <PlantCard onClickButton={() => history.push('/purchase')} />
-          <PlantCard onClickButton={() => history.push('/purchase')} />
-          <PlantCard onClickButton={() => history.push('/purchase')} /> */}
         </Styles.WrapperPlantCards>
       </Styles.Container>
     </Styles.BackgroundPage>

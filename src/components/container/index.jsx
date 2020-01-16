@@ -13,5 +13,6 @@ export default styled.div`
 
   @media (${breakpoints.LARGE}) {
     max-width: 1024px;
+    position: relative;
   }
 `

@@ -8,6 +8,7 @@ import { useStateValue } from 'store'
 import history from 'common/browser-history'
 
 import Header from 'components/header'
+import DesktopLogo from 'components/desktop-logo'
 import Container from 'components/container'
 import Question from 'containers/question'
 
@@ -43,6 +44,7 @@ export default function PetQuestion() {
     <BackgroundPage>
       <Container>
         <Header />
+        <DesktopLogo />
 
         <Question
           title={() => (

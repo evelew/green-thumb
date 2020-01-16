@@ -9,10 +9,11 @@ import { useStateValue } from 'store'
 import history from 'common/browser-history'
 
 import Header from 'components/header'
+import DesktopLogo from 'components/desktop-logo'
 import Container from 'components/container'
 import Question from 'containers/question'
 
-import { BackgroundPage } from '../styles'
+import * as Styles from '../styles'
 
 export default function SunlightQuestion() {
   const [{}, dispatch] = useStateValue()
@@ -51,9 +52,10 @@ export default function SunlightQuestion() {
   ]
 
   return (
-    <BackgroundPage>
+    <Styles.BackgroundPage>
       <Container>
         <Header />
+        <DesktopLogo />
 
         <Question
           title={() => (
@@ -70,6 +72,6 @@ export default function SunlightQuestion() {
           onClickNextButton={() => history.push('/questions/water')}
         />
       </Container>
-    </BackgroundPage>
+    </Styles.BackgroundPage>
   )
 }

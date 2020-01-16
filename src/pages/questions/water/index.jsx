@@ -10,6 +10,7 @@ import history from 'common/browser-history'
 import colors from 'common/colors'
 
 import Header from 'components/header'
+import DesktopLogo from 'components/desktop-logo'
 import Container from 'components/container'
 import Question from 'containers/question'
 
@@ -55,6 +56,7 @@ export default function WaterQuestion() {
     <BackgroundPage>
       <Container>
         <Header />
+        <DesktopLogo />
 
         <Question
           title={() => (

@@ -3,6 +3,7 @@ import React from 'react'
 import history from 'common/browser-history'
 
 import PurchaseTemplate from 'containers/purchase-template'
+
 import * as Styles from './styles'
 
 export default function Purchase() {

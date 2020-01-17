@@ -12,6 +12,7 @@ export default function Question({
   subtitle: Subtitle,
   title: Title,
   color,
+  showErrorMessage,
   nextButtonText,
   prevButtonText,
   onClickPrevButton,
@@ -37,13 +38,17 @@ export default function Question({
         <div>
           <Styles.WrapperOptions>
             {items.map((item, index) => (
-              <QuestionButton
-                color={color}
-                key={index}
-                {...item}
-              />
+              <QuestionButton color={color} key={index} {...item} />
             ))}
           </Styles.WrapperOptions>
+
+          {showErrorMessage && (
+            <Styles.ErrorMessage>
+              <p>
+                <strong>Please select an option</strong>
+              </p>
+            </Styles.ErrorMessage>
+          )}
 
           <Styles.WrapperButtons>
             <Button arrow onClick={onClickNextButton}>

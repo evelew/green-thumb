@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Dog from 'assets/images/dog.png'
 import { ReactComponent as Pet } from 'assets/icons/pet.svg'
@@ -15,6 +15,7 @@ import Question from 'containers/question'
 import { BackgroundPage } from '../styles'
 
 export default function PetQuestion() {
+  const [showErrorMessage, setShowErrorMessage] = useState(false)
   const [{ pet }, dispatch] = useStateValue()
 
   const items = [
@@ -47,7 +48,7 @@ export default function PetQuestion() {
       return history.push('/results')
     }
 
-    alert('Please select an option')
+    setShowErrorMessage(true)
   }
 
   return (
@@ -68,6 +69,7 @@ export default function PetQuestion() {
               for your buddy.
             </>
           )}
+          showErrorMessage={showErrorMessage}
           imageSrc={Dog}
           imageAlt=""
           items={items}

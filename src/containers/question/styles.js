@@ -66,6 +66,15 @@ export const WrapperOptions = styled.div`
   }
 `
 
+export const ErrorMessage = styled.div`
+  margin-top: 10px;
+
+  p {
+    color: ${colors['torchRed']};
+    font-size: 12px;
+  }
+`
+
 export const WrapperButtons = styled.div`
   align-items: center;
   display: flex;

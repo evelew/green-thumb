@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Sun from 'assets/images/sun.png'
 import { ReactComponent as HighSun } from 'assets/icons/high-sun.svg'
@@ -17,6 +17,7 @@ import Question from 'containers/question'
 import * as Styles from '../styles'
 
 export default function SunlightQuestion() {
+  const [showErrorMessage, setShowErrorMessage] = useState(false)
   const [{ sunlight }, dispatch] = useStateValue()
 
   const items = [
@@ -60,7 +61,7 @@ export default function SunlightQuestion() {
       return history.push('/questions/water')
     }
 
-    alert('Please select an option')
+    setShowErrorMessage(true)
   }
 
   return (
@@ -76,6 +77,7 @@ export default function SunlightQuestion() {
               get.
             </>
           )}
+          showErrorMessage={showErrorMessage}
           color={colors['coral']}
           imageSrc={Sun}
           imageAlt="Sol de óculos escuro"

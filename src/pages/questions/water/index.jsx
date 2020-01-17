@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Wateringcan from 'assets/images/wateringcan.png'
 import { ReactComponent as OneDrop } from 'assets/icons/one-drop.svg'
@@ -17,6 +17,7 @@ import Question from 'containers/question'
 import { BackgroundPage } from '../styles'
 
 export default function WaterQuestion() {
+  const [showErrorMessage, setShowErrorMessage] = useState(false)
   const [{ water }, dispatch] = useStateValue()
 
   const items = [
@@ -60,7 +61,7 @@ export default function WaterQuestion() {
       return history.push('/questions/pet')
     }
 
-    alert('Please select an option')
+    setShowErrorMessage(true)
   }
 
   return (
@@ -75,6 +76,7 @@ export default function WaterQuestion() {
               How often do you want to <strong>water</strong> your plant?
             </>
           )}
+          showErrorMessage={showErrorMessage}
           imageSrc={Wateringcan}
           imageAlt=""
           items={items}

@@ -42,6 +42,14 @@ export default function PetQuestion() {
     }
   ]
 
+  const onClickNextButton = () => {
+    if (pet !== null) {
+      return history.push('/results')
+    }
+
+    alert('Please select an option')
+  }
+
   return (
     <BackgroundPage>
       <Container>
@@ -65,7 +73,7 @@ export default function PetQuestion() {
           items={items}
           nextButtonText="finish"
           onClickPrevButton={() => history.push('/questions/water')}
-          onClickNextButton={() => history.push('/results')}
+          onClickNextButton={() => onClickNextButton()}
         />
       </Container>
     </BackgroundPage>

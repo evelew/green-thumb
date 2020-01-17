@@ -55,6 +55,14 @@ export default function SunlightQuestion() {
     }
   ]
 
+  const onClickNextButton = () => {
+    if (sunlight) {
+      return history.push('/questions/water')
+    }
+
+    alert('Please select an option')
+  }
+
   return (
     <Styles.BackgroundPage>
       <Container>
@@ -74,7 +82,7 @@ export default function SunlightQuestion() {
           items={items}
           prevButtonText="home"
           onClickPrevButton={() => history.push('/')}
-          onClickNextButton={() => history.push('/questions/water')}
+          onClickNextButton={() => onClickNextButton()}
         />
       </Container>
     </Styles.BackgroundPage>

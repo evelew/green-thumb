@@ -55,6 +55,14 @@ export default function WaterQuestion() {
     }
   ]
 
+  const onClickNextButton = () => {
+    if (water) {
+      return history.push('/questions/pet')
+    }
+
+    alert('Please select an option')
+  }
+
   return (
     <BackgroundPage>
       <Container>
@@ -72,7 +80,7 @@ export default function WaterQuestion() {
           items={items}
           color={colors['acapulco']}
           onClickPrevButton={() => history.push('/questions/sunlight')}
-          onClickNextButton={() => history.push('/questions/pet')}
+          onClickNextButton={() => onClickNextButton()}
         />
       </Container>
     </BackgroundPage>

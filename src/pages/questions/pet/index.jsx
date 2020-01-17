@@ -15,12 +15,13 @@ import Question from 'containers/question'
 import { BackgroundPage } from '../styles'
 
 export default function PetQuestion() {
-  const [{}, dispatch] = useStateValue()
+  const [{ pet }, dispatch] = useStateValue()
 
   const items = [
     {
       icon: Pet,
       name: 'Yes',
+      active: pet === true,
       onClick: () => {
         dispatch({
           type: 'setPet',
@@ -31,6 +32,7 @@ export default function PetQuestion() {
     {
       icon: NoAnswer,
       name: "No/They don't care",
+      active: pet === false,
       onClick: () => {
         dispatch({
           type: 'setPet',

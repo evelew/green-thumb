@@ -17,12 +17,13 @@ import Question from 'containers/question'
 import { BackgroundPage } from '../styles'
 
 export default function WaterQuestion() {
-  const [{}, dispatch] = useStateValue()
+  const [{ water }, dispatch] = useStateValue()
 
   const items = [
     {
       icon: OneDrop,
       name: 'Rarely',
+      active: water === 'rarely',
       onClick: () => {
         dispatch({
           type: 'setWater',
@@ -33,6 +34,7 @@ export default function WaterQuestion() {
     {
       icon: TwoDrops,
       name: 'Regularly',
+      active: water === 'regularly',
       onClick: () => {
         dispatch({
           type: 'setWater',
@@ -43,6 +45,7 @@ export default function WaterQuestion() {
     {
       icon: ThreeDrops,
       name: 'Daily',
+      active: water === 'daily',
       onClick: () => {
         dispatch({
           type: 'setWater',

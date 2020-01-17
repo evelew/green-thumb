@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Input from 'components/input'
+import QuestionButton from 'components/question-button'
 import Button from 'components/button'
 
 import * as Styles from './styles'
@@ -37,7 +37,7 @@ export default function Question({
         <div>
           <Styles.WrapperOptions>
             {items.map((item, index) => (
-              <Input
+              <QuestionButton
                 color={color}
                 key={index}
                 {...item}

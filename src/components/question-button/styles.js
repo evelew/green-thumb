@@ -3,13 +3,31 @@ import styled from 'styled-components'
 import breakpoints from 'common/breakpoints'
 import colors from 'common/colors'
 
-export const Wrapper = styled.div`
+const styleButtonSelected = color => {
+  return `
+    background: ${color ? color : colors['coral']};
+
+    svg {
+      path {
+        fill: white;
+      }
+    }
+
+    p {
+      color: white;
+      text-align: center;
+    }
+  `
+}
+
+export const Button = styled.button`
   align-items: center;
-  background: white;
+  background: ${props => (props.active ? props.color : 'white')};
   border-radius: 5px;
   box-shadow: 0px 20px 34px rgba(0, 0, 0, 0.0758577);
   display: flex;
   padding: 20px 32px;
+  width: 100%;
 
   @media (${breakpoints.LARGE}) {
     box-shadow: none;
@@ -21,20 +39,13 @@ export const Wrapper = styled.div`
     width: 215px;
   }
 
+  &.active {
+    ${props => styleButtonSelected(props.color)}
+  }
+
   &:hover {
     @media (${breakpoints.LARGE}) {
-      background: ${props => (props.color ? props.color : colors['coral'])};
-
-      svg {
-        path {
-          fill: white;
-        }
-      }
-
-      p {
-        color: white;
-        text-align: center;
-      }
+      ${props => styleButtonSelected(props.color)}
     }
   }
 

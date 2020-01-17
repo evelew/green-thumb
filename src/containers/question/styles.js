@@ -50,7 +50,7 @@ export const WrapperOptions = styled.div`
     margin: 65px auto 0 auto;
   }
 
-  > div {
+  > button {
     margin-bottom: 20px;
 
     @media (${breakpoints.LARGE}) {

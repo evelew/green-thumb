@@ -7,6 +7,7 @@ import { ReactComponent as NoSun } from 'assets/icons/no-answer.svg'
 
 import { useStateValue } from 'store'
 import history from 'common/browser-history'
+import colors from 'common/colors'
 
 import Header from 'components/header'
 import DesktopLogo from 'components/desktop-logo'
@@ -16,12 +17,13 @@ import Question from 'containers/question'
 import * as Styles from '../styles'
 
 export default function SunlightQuestion() {
-  const [{}, dispatch] = useStateValue()
+  const [{ sunlight }, dispatch] = useStateValue()
 
   const items = [
     {
       icon: HighSun,
       name: 'High sunlight',
+      active: sunlight === 'high',
       onClick: () => {
         dispatch({
           type: 'setSunlight',
@@ -32,6 +34,7 @@ export default function SunlightQuestion() {
     {
       icon: LowSun,
       name: 'Low sunlight',
+      active: sunlight === 'low',
       onClick: () => {
         dispatch({
           type: 'setSunlight',
@@ -42,6 +45,7 @@ export default function SunlightQuestion() {
     {
       icon: NoSun,
       name: 'No sunlight',
+      active: sunlight === 'no',
       onClick: () => {
         dispatch({
           type: 'setSunlight',
@@ -64,6 +68,7 @@ export default function SunlightQuestion() {
               get.
             </>
           )}
+          color={colors['coral']}
           imageSrc={Sun}
           imageAlt="Sol de óculos escuro"
           items={items}

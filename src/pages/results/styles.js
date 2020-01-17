@@ -17,7 +17,10 @@ export const WrapperImage = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-  padding-top: 60px;
+
+  @media (${breakpoints.LARGE}) {
+    padding-top: 60px;
+  }
 
   img {
     width: 146px;
@@ -25,6 +28,7 @@ export const WrapperImage = styled.div`
 `
 
 export const Title = styled.h1`
+  color: ${colors['bush']};
   font-size: 40px;
   margin: 0 auto 28px auto;
   text-align: center;
@@ -37,10 +41,30 @@ export const Title = styled.h1`
 `
 
 export const WrapperPlantCards = styled.div`
+  display: flex;
+  overflow-x: auto;
+
+  @media (${breakpoints.MEDIUM}) {
+    margin-top: 80px;
+  }
+
   @media (${breakpoints.LARGE}) {
     display: grid;
     grid-template-columns: 268px 268px 268px;
     justify-content: center;
     grid-gap: 50px 30px;
+  }
+
+  > div {
+    flex: 0 0 auto;
+    margin-right: 18px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @media (${breakpoints.LARGE}) {
+      margin-right: 0;
+    }
   }
 `

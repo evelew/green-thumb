@@ -38,6 +38,14 @@ export const WrapperContent = styled.div`
   align-items: center;
   display: flex;
   flex-flow: column;
+
+  > div {
+    width: 100%;
+
+    @media (${breakpoints.LARGE}) {
+      width: auto;
+    }
+  }
 `
 
 export const WrapperOptions = styled.div`

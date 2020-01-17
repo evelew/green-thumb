@@ -54,7 +54,11 @@ export const Button = styled.button`
   }
 
   svg {
-    width: 75px;
+    width: 42px;
+    
+    @media (${breakpoints.LARGE}) {
+      width: 75px;
+    }
 
     path {
       fill: ${props => (props.color ? props.color : colors['coral'])};

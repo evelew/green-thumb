@@ -28,14 +28,15 @@ export default function Results() {
       const data = await fetchData({ sunlight, water, pet })
       setPlants(data)
     } catch (error) {
-      console.log(error)
+      alert('Something went wrong. Please try again.')
+      console.error(error)
     }
   }
 
-  const onClickBuyPlant = plantId => {
+  const onClickBuyPlant = plant => {
     dispatch({
-      type: 'setPlantId',
-      value: plantId
+      type: 'setPlant',
+      value: plant
     })
 
     history.push('/purchase')
@@ -56,7 +57,7 @@ export default function Results() {
         <Styles.WrapperPlantCards>
           {plants.map(plant => (
             <PlantCard
-              onClickButton={() => onClickBuyPlant(plant.id)}
+              onClickButton={() => onClickBuyPlant(plant)}
               key={plant.id}
               {...plant}
             />

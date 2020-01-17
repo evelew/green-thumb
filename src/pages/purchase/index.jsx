@@ -13,7 +13,7 @@ export default function Purchase() {
   const [email, setEmail] = useState('')
   const [invalidEmail, setInvalidEmail] = useState(false)
   const [invalidName, setInvalidName] = useState(false)
-  const [{ plantId }] = useStateValue()
+  const [{ plant }] = useStateValue()
 
   const onSubmit = async e => {
     e.preventDefault()
@@ -25,7 +25,7 @@ export default function Purchase() {
       const data = {
         name,
         email,
-        id: plantId
+        id: plant.id
       }
 
       await buyPlant(data)

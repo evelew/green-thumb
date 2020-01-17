@@ -11,7 +11,7 @@ const AppStore = ({ children }) => {
       sunlight: null,
       water: null,
       pet: null,
-      plantId: null
+      plant: null
     },
     get(appStoreName)
   )
@@ -49,10 +49,10 @@ const AppStore = ({ children }) => {
         }
         setCache(data)
         return data
-      case 'setPlantId':
+      case 'setPlant':
         data = {
           ...state,
-          plantId: action.value
+          plant: action.value
         }
         setCache(data)
         return data

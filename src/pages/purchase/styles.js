@@ -42,7 +42,8 @@ export const Label = styled.label`
   }
 
   strong {
-    color: ${colors['doveGray']};
+    color: ${props =>
+        props.isInvalid === true ? colors['torchRed'] : colors['doveGray']};
     font-size: 16px;
     margin-left: 15px;
   }
@@ -61,7 +62,8 @@ export const Label = styled.label`
     padding: 6px 20px;
 
     ::placeholder {
-      color: ${colors['alto']};
+      color: ${props =>
+        props.isInvalid === true ? colors['torchRed'] : colors['alto']};
     }
   }
 `

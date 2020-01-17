@@ -14,7 +14,7 @@ import * as Styles from './styles'
 
 export default function Results() {
   const [plants, setPlants] = useState([])
-  const [state] = useStateValue()
+  const [state, dispatch] = useStateValue()
 
   useEffect(() => {
     getPlants()
@@ -32,6 +32,15 @@ export default function Results() {
     }
   }
 
+  const onClickBuyPlant = plantId => {
+    dispatch({
+      type: 'setPlantId',
+      value: plantId
+    })
+
+    history.push('/purchase')
+  }
+
   return (
     <Styles.BackgroundPage>
       <Styles.Container>
@@ -47,7 +56,7 @@ export default function Results() {
         <Styles.WrapperPlantCards>
           {plants.map(plant => (
             <PlantCard
-              onClickButton={() => history.push('/purchase')}
+              onClickButton={() => onClickBuyPlant(plant.id)}
               key={plant.id}
               {...plant}
             />

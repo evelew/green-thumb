@@ -1,31 +1,47 @@
 import React, { useState } from 'react'
 
 import history from 'common/browser-history'
-import { isEmailValid } from 'common/helpers'
+import { useStateValue } from 'store'
+import { buyPlant } from 'api'
 
 import PurchaseTemplate from 'containers/purchase-template'
 
 import * as Styles from './styles'
 
 export default function Purchase() {
-  const [name, setName] = useState(null)
-  const [email, setEmail] = useState(null)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
   const [invalidEmail, setInvalidEmail] = useState(false)
+  const [invalidName, setInvalidName] = useState(false)
+  const [{ plantId }] = useStateValue()
 
-  const onSubmit = e => {
+  const onSubmit = async e => {
     e.preventDefault()
-    const isValid = isEmailValid(email)
 
-    if (isValid === false) {
-      return setInvalidEmail(true)
+    setInvalidEmail(false)
+    setInvalidName(false)
+
+    try {
+      const data = {
+        name,
+        email,
+        id: plantId
+      }
+
+      await buyPlant(data)
+
+      goToNextRoute()
+    } catch (err) {
+      const { error } = err.response.data
+
+      if (error === 'Invalid Email' || email.length === 0) {
+        setInvalidEmail(true)
+      }
+
+      if (name.split(' ').length <= 1) {
+        setInvalidName(true)
+      }
     }
-
-    sendForm()
-    goToNextRoute()
-  }
-
-  const sendForm = () => {
-    console.log('send form')
   }
 
   const goToNextRoute = () => history.push('/purchase/thank-you')
@@ -40,7 +56,7 @@ export default function Purchase() {
         </Styles.ContactIntro>
 
         <form onSubmit={onSubmit}>
-          <Styles.Label>
+          <Styles.Label isInvalid={invalidName}>
             <strong>Name</strong>
             <input
               value={name}
@@ -49,6 +65,11 @@ export default function Purchase() {
               placeholder="Crazy Plant Person"
               onChange={e => setName(e.target.value)}
             />
+            {invalidName && (
+              <Styles.MessageError>
+                <span>!</span>Please provide your complete name.
+              </Styles.MessageError>
+            )}
           </Styles.Label>
 
           <Styles.Label isInvalid={invalidEmail}>

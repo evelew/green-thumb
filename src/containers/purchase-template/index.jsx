@@ -10,8 +10,7 @@ export default function PurchaseTemplate({ children }) {
   return (
     <Styles.PageContent>
       <Styles.Container>
-        <DesktopLogo />
-
+        <DesktopLogo style={{ top: '440px' }} />
         <Styles.PlantDetails>
           <Header />
           <PlantDetails />
@@ -19,9 +18,7 @@ export default function PurchaseTemplate({ children }) {
       </Styles.Container>
 
       <Styles.WrapperBottomContent>
-        <Styles.Container>
-          {children}
-        </Styles.Container>
+        <Styles.Container>{children}</Styles.Container>
       </Styles.WrapperBottomContent>
     </Styles.PageContent>
   )

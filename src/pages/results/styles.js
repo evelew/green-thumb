@@ -7,10 +7,6 @@ import breakpoints from 'common/breakpoints'
 
 export const BackgroundPage = styled.div`
   background-color: ${colors['wildSand']};
-
-  @media (${breakpoints.MEDIUM}) {
-    padding-top: 60px;
-  }
 `
 
 export const Container = styled(ContainerBase)`
@@ -21,6 +17,7 @@ export const WrapperImage = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  padding-top: 60px;
 
   img {
     width: 146px;

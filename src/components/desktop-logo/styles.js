@@ -13,7 +13,7 @@ export const Logo = styled.div`
     left: 0;
     transform: rotate(-90deg);
     transform-origin: 0 0;
-    top: 80%;
+    top: 570px;
     width: 100%;
   }
 

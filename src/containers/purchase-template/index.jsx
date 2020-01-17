@@ -11,15 +11,16 @@ export default function PurchaseTemplate({ children }) {
     <Styles.PageContent>
       <Styles.Container>
         <DesktopLogo style={{ top: '440px' }} />
-        <Styles.PlantDetails>
+        
+        <Styles.WhiteBackground>
           <Header />
           <PlantDetails />
-        </Styles.PlantDetails>
+        </Styles.WhiteBackground>
       </Styles.Container>
 
-      <Styles.WrapperBottomContent>
+      <Styles.GrayBackground>
         <Styles.Container>{children}</Styles.Container>
-      </Styles.WrapperBottomContent>
+      </Styles.GrayBackground>
     </Styles.PageContent>
   )
 }

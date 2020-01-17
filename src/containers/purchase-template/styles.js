@@ -20,7 +20,7 @@ export const Container = styled(ContainerBase)`
   min-height: auto;
 `
 
-export const PlantDetails = styled(ContainerBase)`
+export const WhiteBackground = styled(ContainerBase)`
   background: white;
   min-height: auto;
   padding-bottom: 35px;
@@ -30,6 +30,6 @@ export const PlantDetails = styled(ContainerBase)`
   }
 `
 
-export const WrapperBottomContent = styled.div`
+export const GrayBackground = styled.div`
   background-color: ${colors['wildSand']};
 `
